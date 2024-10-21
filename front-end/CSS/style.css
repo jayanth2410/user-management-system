@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+body {
+  background-color: rgb(210, 204, 195);
+  font-family: "Agdasima", sans-serif;
+  font-style: normal;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  min-height: 100vh;
+}
+
+table {
+  background-color: aqua;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 16px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(201, 0, 0, 0.1);
+}
+
+table thead th {
+  background-color: blueviolet;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+table tbody td {
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.edit,
+.delete {
+  border-radius: 5px;
+  padding: 4px;
+  display: block;
+}
+
+.edit {
+  background-color: green;
+}
+
+.delete {
+  background-color: red;
+}
