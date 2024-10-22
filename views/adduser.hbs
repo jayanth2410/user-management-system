@@ -1,0 +1,29 @@
+<h2>Add user</h2>
+<hr />
+
+{{#if message}}
+  <p class="message"> {{message}}</p>
+{{/if}}
+
+<form method="post" action="/adduser">
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" name="name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="rollno">Roll No</label>
+    <input type="text" name="rollno" required />
+  </div>
+  <div class="form-group">
+    <label for="Age">Age</label>
+    <input type="number" name="age" required />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" name="phone" required />
+  </div>
+  <button id="createbtn" type="submit">Create User</button>
+  <a href="/" class="viewUser">View users</a>
+</form>

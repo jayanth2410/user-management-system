@@ -1,0 +1,32 @@
+<h2>Edit user</h2>
+<hr />
+{{#if message}}
+  <p class="message"> {{message}}</p>
+{{/if}}
+
+{{#each row}}
+  <form method="post" action="/edituser/{{id}}" autocomplete="off">
+
+    <div class="form-group">
+      <label for="Name">Name</label>
+      <input type="text" name="name" value="{{this.name}}" />
+    </div>
+
+    <div class="form-group">
+      <label for="rollno">Roll No</label>
+      <input type="text" name="rollno" value="{{this.rollno}}" />
+    </div>
+    <div class="form-group">
+      <label for="Age">Age</label>
+      <input type="number" name="age" value="{{this.age}}" />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="text" name="phone" value="{{this.phone}}" />
+    </div>
+    <button id="createbtn" type="submit">Save Changes</button>
+    <a href="/" class="viewUser">View users</a>
+
+  </form>
+{{/each}}

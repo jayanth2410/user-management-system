@@ -5,6 +5,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+hr {
+  height: 2px;
+  background-color: #000000;
+  margin: 20px 0;
+}
+
+.adduser {
+  justify-content: center;
+  text-align: end;
+  background-color: rgb(43, 62, 188);
+  padding: 10px;
+  display: flex;
+  align-self: end;
+  width: 100px;
+  border-radius: 6px;
+}
+
+.adduser a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
+}
 
 h2 {
   text-align: center;
@@ -73,4 +97,77 @@ a:hover {
 
 .delete {
   background-color: red;
+}
+
+/* styling for /adduser */
+form {
+  padding: 40px;
+  /* background-color: rgba(158, 76, 235, 0.874); */
+  margin: 10px auto;
+  border-radius: 15px;
+}
+.form-group {
+  padding: 10px;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  /* color: white; */
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right: 0px;
+  flex: 1;
+}
+
+.form-group input {
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 7px;
+  flex: 4;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#createbtn {
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: green;
+  border: none;
+  color: white;
+  font-size: larger;
+  border-radius: 15px;
+}
+
+#createbtn:hover {
+  cursor: pointer;
+  background-color: rgb(2, 138, 2); /* Changes the background color on hover */
+  color: #ffffff; /* Changes the text color on hover */
+}
+
+.viewUser {
+  font-size: 20px;
+  font-weight: bolder;
+  align-self: center;
+  float: right;
+}
+
+.viewUser:hover {
+  text-shadow: 2px 2px 4px rgba(95, 53, 116, 0.5);
+}
+
+.message {
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #4caf50; /* Green border */
+  background-color: #dff0d8; /* Light green background */
+  color: #063f07; /* Dark green text */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
 }

@@ -1,4 +1,8 @@
 <h2>User Management System</h2>
+<hr />
+<div class="adduser">
+  <a href="/adduser">Add user</a>
+</div>
 <table>
   <thead>
     <tr>
@@ -20,8 +24,12 @@
         <td>{{this.rollno}}</td>
         <td>{{this.age}}</td>
         <td>{{this.phone}}</td>
-        <td><a href="{{this.id}}" class="edit">edit</a></td>
-        <td><a href="{{this.id}}" class="delete">delete</a></td>
+        <td><a href="/edituser/{{this.id}}" class="edit">edit</a></td>
+        <td><a
+            onclick="return confirm('Are you sure?')"
+            href="/deleteuser/{{this.id}}"
+            class="delete"
+          >delete</a></td>
       </tr>
     {{/each}}
   </tbody>
