@@ -23,9 +23,9 @@ body {
 }
 
 table {
-  background-color: aqua;
+  /* background-color: rgb(126, 11, 184); */
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   text-align: center;
   margin: 20px auto;
   border-radius: 16px;
@@ -47,7 +47,11 @@ table tbody td {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-a {
+table tbody tr:nth-child(even) {
+  background-color: rgb(85, 16, 150);
+}
+
+table tbody td a {
   text-decoration: none;
   color: white;
 }

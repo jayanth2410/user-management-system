@@ -1,42 +1,28 @@
 <h2>User Management System</h2>
 <table>
   <thead>
-    <th>#</th>
-    <th>Name</th>
-    <th>Roll No</th>
-    <th>Age</th>
-    <th>Phone</th>
-    <th>Edit</th>
-    <th>Delete</th>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Roll No</th>
+      <th>Age</th>
+      <th>Phone</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
   </thead>
 
   <tbody>
-    <td>1</td>
-    <td>Jayanth</td>
-    <td>7376212II157</td>
-    <td>21</td>
-    <td>9876545678</td>
-    <td><a href class="edit">Edit</a></td>
-    <td><a href class="delete">Delete</a></td>
-  </tbody>
-
-  <tbody>
-    <td>2</td>
-    <td>Praveen</td>
-    <td>7376212IIT201</td>
-    <td>21</td>
-    <td>8927812799</td>
-    <td><a href class="edit">Edit</a></td>
-    <td><a href class="delete">Delete</a></td>
-  </tbody>
-
-  <tbody>
-    <td>3</td>
-    <td>Suriya</td>
-    <td>7376212IIT160</td>
-    <td>21</td>
-    <td>7866291279</td>
-    <td><a href class="edit">Edit</a></td>
-    <td><a href class="delete">Delete</a></td>
+    {{#each row}}
+      <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.rollno}}</td>
+        <td>{{this.age}}</td>
+        <td>{{this.phone}}</td>
+        <td><a href="{{this.id}}" class="edit">edit</a></td>
+        <td><a href="{{this.id}}" class="delete">delete</a></td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>

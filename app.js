@@ -1,6 +1,5 @@
 const express = require("express");
 const exphbs = require("express-handlebars"); //to create templates(extensions)
-const mysql = require("mysql");
 const bodyParser = require("body-parser"); // to handle json files
 const app = express();
 
@@ -19,10 +18,9 @@ const handlebars = exphbs.create({ extname: ".hbs" });
 app.engine("hbs", handlebars.engine);
 app.set("view engine", "hbs");
 
-//Router
-app.get("/", (req, res) => {
-  res.render("home");
-});
+//routes are avil in server/routes/user.js
+const routes = require("./server/routes/user");
+app.use("/", routes);
 
 //Listening to the Port
 app.listen(PORT, () => {
